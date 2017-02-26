@@ -1,11 +1,9 @@
 TO USE:
 
-Edit the file "mysites.txt" and enter, one per line, a list of web addresses for sites you log into.
-For instance, if you have accounts with discordapp.com, amazon.com, and google.com, you'd list them in the file like this:
+Edit the file "mysites.txt" and enter a list of web addresses for sites you log into, separated by spaces.
+For instance, if you have accounts with Discord, Amazon, and Google, you'd list them in the file like this:
 
-amazon.com
-discordapp.com
-google.com
+amazon.com discordapp.com google.com
 
 Save the file.
 Mac and *nix users:  Set "check-sites.sh" as executable and run it.
