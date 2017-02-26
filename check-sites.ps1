@@ -1,21 +1,24 @@
 Write-Host "Initializing..."
 Write-Host ""
-$usersites = cat mysites.txt; # Importing the user's sites.
+$userSites = cat mysites.txt; # Importing the user's sites.
+$formattedSites = $userSites.Split(" "); # Format the sites so that they will pass into Grep properly.
 $outputObjects = new-object System.Collections.ArrayList; # Define an array list for later use.$emptyListProperties = {'Site' = "NONE!"; 'Compromised' = "NONE!"}; # In case no sites are compromised.
 $listURL = "https://raw.githubusercontent.com/pirate/sites-using-cloudflare/master/sorted_unique_cf.txt" # Most up to date list of compromised sites.
 $listFile = ".\sorted_unique_cf.txt"
 $foundSite = $null # Instantiate this variable to be null.
 
+
+
 Write-Host "Downloading the most recent list of compromised sites..."
 
-start-bitstransfer -source $listURL -destination $listFile | Out-Null
+wget -uri $listURL -outfile $listFile
 
 Write-Host "Initialization done."
 
 Write-Host "Checking sites... this may take some time.  Please wait."
 
 
-foreach ($site in $usersites) {
+foreach ($site in $formattedSites) {
   $foundSite = (.\bin\grep.exe -xc $site $listFile)
   if ($foundSite -gt 0) {
 	$object = new-object -Type PSObject; # Custom object for formatting purposes.
