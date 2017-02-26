@@ -8,7 +8,7 @@ A simple executable for Windows (and a simple shell for \*nix) to check against 
 + Download the .zip file hosted in this repository, and extract it so that the contents are in one folder.
 + Open 'mysites.txt' and list, one per line, the domain for each website you log into.  For instance, if you have accounts with Amazon and Google, your file would look like this:
 
-minecraft.net
+amazon.com
 <br/>google.com
 
 + Save the file.
