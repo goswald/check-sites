@@ -32,7 +32,7 @@ amazon.com google.com discordapp.com
 + Watch the text output for status.  The output is a little messy, but it will tell you when it's done and what it's found.
 + A text copy of the results will be located in the folder that the executables are in, titled 'compromised_sites.txt.'
 
-Once you have your list of compromised sites, I highly recommend going through and updating your passwords for those sites.  **PLEASE NOTE:** The list is actively being updated by Pirate as he receives additional information.  More sites may be added, and some may be removed.  It wouldn't hurt to periodically check for sites that are reporting to be 
+Once you have your list of compromised sites, I highly recommend going through and updating your passwords for those sites.  **PLEASE NOTE:** The list is actively being updated by Pirate as he receives additional information.  More sites may be added, and some may be removed.  It wouldn't hurt to periodically check for sites that may not have been listed before.
 
 ## Advanced Users:
 
